@@ -66,8 +66,8 @@ System({
     if (!match) return await message.reply('_Please provide a pinterest *url*');
     if (!isUrl(match)) return await message.reply("_Please provide a valid pinterest *url*");
     if (!match.includes("pin.it")) return await message.reply("_Please provide a valid pinterest *url*");
-    const { result } = await getJson(api + "download/pinterest?url=" + match);
-    await message.sendFromUrl(result.url, { caption: "_*downloaded 🤍*_" });
+    const { url } = await getJson(IronMan(`ironman/dl/pinterest?url=${match}`));
+    await message.sendFromUrl(url, { caption: "_*downloaded 🤍*_" });
 });
 
 System({

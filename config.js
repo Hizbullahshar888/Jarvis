@@ -65,6 +65,8 @@ module.exports = {
   STATUS_REACTION_EMOJI: process.env.STATUS_REACTION_EMOJI || "🍉,🍓",
   STATUS_REACTION: toBool(process.env.STATUS_REACTION || "false"),
   GEMINI: process.env.GEMINI || "null",
+  GROQ_KEY: process.env.GROQ_KEY || "",
+  GROQ_MODEL: process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || '',
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || '',
