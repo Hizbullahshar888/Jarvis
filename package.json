@@ -13,7 +13,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@whiskeysockets/baileys": "git+https://github.com/Loki-Xer/Baileys.git",
+        "@whiskeysockets/baileys": "github:Loki-Xer/Baileys",
+        "async-lock": "^1.4.1",
         "browser-id3-writer": "^4.4.0",
         "cheerio": "^1.0.0",
         "node-cron": "^3.0.3",
@@ -22,6 +23,7 @@
         "fluent-ffmpeg": "^2.1.2",
         "form-data": "^4.0.0",
         "link-preview-js": "^3.0.4",
+        "libphonenumber-js": "^1.12.6",
         "node-webpmux": "^3.2.0",
         "pdfkit": "^0.15.0",
         "pm2": "^5.4.2",
